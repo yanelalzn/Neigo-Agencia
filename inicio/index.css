@@ -9,7 +9,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    
+    font-family: "Titillium Web", sans-serif;;
 }
 .flex{
     display: flex;
@@ -199,7 +199,7 @@ header .header-img img{
     margin-top: 6rem;
     background-color: #000;
     height: auto;
-    width: 1300px;
+    width: 1200px;
 }
 .cliente{
     display: flex;
@@ -209,7 +209,7 @@ header .header-img img{
 .scroll{
     position: relative;
     display: flex;
-    width: 1300px;
+    width: 1200px;
     overflow: hidden;
     mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
 }
@@ -242,7 +242,7 @@ header .header-img img{
 
 /* Nosotros */
 .nosotros{
-    margin-top: 4rem;
+    margin: 4rem 0 5rem 0;
     position: relative;
 }
 .img-nosotros{
@@ -272,7 +272,7 @@ header .header-img img{
 .img-nosotros img:nth-child(1){
     width: 450px;
     height: 600px;
-    margin: 100px 0 0 60px;
+    margin: 100px 0 0 0;
 }
 .second-column img:nth-child(2){ 
     padding: 0 20px;
@@ -287,7 +287,7 @@ header .header-img img{
     margin: 30px 0;
     padding: 40px 0 40px 20px;
     font-size: 23px;
-    box-shadow: -10px 0px 7px -15px;
+    box-shadow: -12px 0px 7px -15px;
     font-weight: 100;
 }
 
@@ -337,4 +337,42 @@ header .header-img img{
 .botton-ete i{
     color: #fff;
     font-size: 22px;
+}
+
+
+/* solution */
+.solution .title-nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.solution .title-nosotros h1{
+    padding: 0 0 0 6rem;
+}
+.title-nosotros img{
+    width: 150px;
+    height: 60px;
+    transform: scaleX(-1);
+}
+.solution-order{
+    display: flex;
+    justify-content: left;
+    margin: 2rem 0;
+}
+.solution-order .solution-orden-img, .solution-order ul{
+    width: 50%;
+}
+.solution-orden-img img{
+    width: 230px;
+    height: 250px;
+}
+.solution ul{
+    width: max-content;
+    box-shadow: -12px 0px 7px -15px;
+}
+.solution ul li{
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px 20px;
+    font-size: 23px;
 }
