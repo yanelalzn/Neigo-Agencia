@@ -1,1 +1,340 @@
-html
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.flex{
+    display: flex;
+}
+
+
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    height: 180px;
+    background-color: #fff0;
+    box-shadow: 0 10px 7px -15px;
+    background-image: linear-gradient(180deg, #29213938 0%, #FFFFFF00 100%);
+}
+.header-img{
+    padding: 0 0 0 8.2rem;
+    width: 42%;
+}
+.list-header{
+    width: 50%;
+}
+header .header-img img{
+    height: 115px;
+    width: 110px;
+    cursor: pointer;
+}
+.list-header ul:nth-child(1){
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+.list-header ul li a{
+    display: flex;
+    font-family: "Oxanium", sans-serif;
+    font-style: normal;
+    padding: 0 5px;
+    color: #000000;
+    font-size: 17px;
+    transition: 0.7s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.list-header ul li a:hover{
+    color: #F01E28;
+}
+
+/* menu select */
+
+.menu-servicios{
+    display: none;
+}
+
+/* banner */
+
+.banner{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.inf-banner, .image-banner{
+    width: 50%;
+}
+.inf-banner{
+    padding: 0 0 0 8.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: default;
+}
+.image-banner{
+    text-align: center;   
+    position: relative;
+}
+
+.inf-banner p{
+    font-size: 25px;
+    font-family: "Titillium Web", sans-serif;
+}
+.inf-banner p strong, .inf-banner h1 strong{
+    color: #F01E28;
+    font-weight: 700;
+}
+.inf-banner h1{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.button-banner{
+    width: max-content;
+    align-items: center;
+    box-shadow: 0 1px 0px 0px;
+}
+.button-banner a{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* icons-banner */
+
+.image-banner .icons-banner .container-icon{
+    position: absolute;
+}
+.image-banner .icons-banner .container-icon img{
+    position: relative;
+}
+.image-banner .icons-banner .container-icon:nth-child(1){
+    top: 12%;
+    right: 65%;
+}
+.image-banner .icons-banner .container-icon:nth-child(2){
+    top: 82%;
+    right: 33%;
+}
+.image-banner .icons-banner .container-icon:nth-child(3) {
+    top: 52%;
+    right: 22%;
+}
+.image-banner .icons-banner .container-icon:nth-child(6){
+    top: 30%;
+    right: 72%;
+}
+.image-banner .icons-banner .container-icon:nth-child(5){
+    top: 40%;
+    right: 67%;
+}
+.image-banner .icons-banner .container-icon:nth-child(4){
+    top: 40%;
+    right: 24%;
+}
+.image-banner .icons-banner .container-icon:nth-child(3) img{
+    width: 70px;
+    height: 70px;
+    animation: salto 0.8s infinite;
+}
+.image-banner .icons-banner .container-icon:nth-last-child(-n+2) img{
+    width: 30px;
+    height: 30px;
+    animation: salto 0.8s infinite;
+}
+.image-banner .icons-banner .container-icon:nth-child(4) img{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    animation: salto 0.8s infinite;
+}
+.image-banner .icons-banner .container-icon:nth-child(-n+2) img{
+    width: 65px;
+    height: 65px;
+    animation: salto 0.8s infinite;
+}
+
+/* icon salto */
+
+@keyframes salto{
+    0%, 100% {top: 0;}
+    30%  {top: -10px;}
+}
+
+/* figures banner */
+
+.figure-banner img:nth-child(1){
+    position: absolute;
+    top: 90%;
+    right: 90%;
+    width: 120px;
+    height: 45px;
+}
+.figure-banner img:nth-child(2){
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 120px;
+    height: 40px;
+}
+
+/* Clientes */
+
+.business-logos{
+    margin-top: 6rem;
+    background-color: #000;
+    height: auto;
+    width: 1300px;
+}
+.cliente{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.scroll{
+    position: relative;
+    display: flex;
+    width: 1300px;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+.scroll .este{
+    white-space: nowrap;
+    animation: animate 30s linear infinite;
+} 
+.scroll img{
+    width: 100px;
+    height: 80px;
+    margin: 0 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.scroll img:not(:hover){
+    filter: grayscale(100%);
+}
+@keyframes animate {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.scroll:hover .este{
+    animation-play-state: paused;
+}
+
+/* Nosotros */
+.nosotros{
+    margin-top: 4rem;
+    position: relative;
+}
+.img-nosotros{
+    display: flex;
+}
+.first-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.second-column{
+    width: 55%; 
+}
+.title-nosotros h1{
+    margin: 60px 0;
+    padding: 0 20px;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.title-nosotros strong{
+    color: #F01E28;
+    font-weight: 700;
+}
+.img-nosotros img:nth-child(1){
+    width: 450px;
+    height: 600px;
+    margin: 100px 0 0 60px;
+}
+.second-column img:nth-child(2){ 
+    padding: 0 20px;
+    width: 160px;
+    height: 50px;   
+}
+.second-column .second-img-nosotros{
+    width: 780px;
+    height: 430px; 
+}
+.second-column p{
+    margin: 30px 0;
+    padding: 40px 0 40px 20px;
+    font-size: 23px;
+    box-shadow: -10px 0px 7px -15px;
+    font-weight: 100;
+}
+
+/* button cicle */
+
+.button-nosotros{
+    position: absolute;
+    top: 90%;
+    right: 75%;
+}
+.botton-ete{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 48px 26px;
+    border-radius: 100%;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 6px;
+    background-color: #000;
+    z-index: 1;
+}
+.botton-ete a{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.botton-ete::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    background-color: #fe0000;
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+.botton-ete:hover::before{
+    top: 0%;
+    border-radius: 0%;
+}
+.botton-ete i{
+    color: #fff;
+    font-size: 22px;
+}
