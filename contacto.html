@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Neigo Agencia - Nosotros</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <figure class="nav-image">
+                <img src="img/logo.png" alt="" class="nav-logo">
+            </figure>
+            <label class="nav-toggle">
+                <input type="checkbox" id="menu-input" class="nav-input">
+            </label>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Servicio <i class='bx bxs-chevron-down'></i> 
+                        <input type="checkbox" class="dropdown-check">
+                    </a>
+                    <div class="dropdown-content">
+                        <ul class="menu-servicios">
+                            <li class="dropdown"><a href="">Diseño de Páginas Web</a></li>
+                            <li class="dropdown"><a href="">BTL</a></li>
+                            <li class="dropdown"><a href="">Marketing Digital</a></li>
+                            <li class="dropdown"><a href="">Implementaciones</a></li>
+                            <li class="dropdown"><a href="">Trade</a></li>
+                            <li class="dropdown"><a href="">OutDoor</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contacto">
+        <div class="first-file-contact" style=" display: flex; flex-direction: column-reverse; margin: 2rem 0 3rem 0;">
+            <div class="title-contacto" style="flex-direction: column;">
+                <h1 style="margin: 1rem 0 2rem 0;">No dudes en <strong><br>contáctarnos </strong>para <br> <strong class="grey">trabajar juntos</strong></h1>
+                <p style="width: auto; margin: auto;">¿Listo para empezar algo grande? Completa el formulario<br> y te contactamos para darle vida a tu proyecto.</p>
+            </div>
+            <div class="figure-cont" style="text-align: right; margin-bottom: 1px; margin-top: 0;">
+                <img src="img/direction.png" alt="" style="transform: rotate(-180deg);">
+            </div>  
+        </div>
+        <div class="second-file-contact" style="padding: 5rem 0 5rem 0;">
+            <div class="inf-contact">
+                <h1>Trabajemos, llámanos <br>al <strong>958 745 852</strong></h1>
+                <p>Podemos coordinar una reunión virtual a través 
+                    de Zoom o Google<br> Meet. Comparte tus datos y 
+                    detalles de tu proyecto para que podamos<br> ayudarte 
+                    a lograr algo excepcional.
+                </p>
+                <button>Contactanos <i class='bx  bx-arrow-up-right-stroke'></i></button>
+            </div>
+            <div class="formulario-contacto">
+                <form action="formulario.php" method="post">
+                    <div class="name">
+                        <label for="nombre">Nombre <b>*</b></label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </div>
+                    <div class="name">
+                        <label for="apellidos">Apellidos <b>*</b></label>
+                        <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
+                    </div>
+                    <div class="input-large">
+                        <label for="telefono">Teléfono <b>*</b></label>
+                        <input type="number" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono"> 
+                    </div>
+                    <div class="input-large">
+                        <label for="email">Email <b>*</b></label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </div>
+                    <div class="input-large">
+                        <label for="email">Mensaje</label>
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                    </div>
+                    <button class="btn-form" type="submit" name="enviar_formulario" id="enviar">Enviar</button>         
+                </form>
+            </div>               
+        </div>
+        <div class="contact-down">
+            <div class="inf-contact-down">
+                <p>angenciaContacto@neigo.com</p>
+                <p>Av. caminos del inca 1325 Lima- Surco</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo-footer">
+            <img src="img/logo-down.png" alt="">
+        </div>
+        <div class="footer-down">
+            <div class="derechos-footer">
+                <p>© 2025  Todos los derechos reservados.</p>
+                <p>Términos y condiciones</p>
+            </div>
+            <div class="redes-footer">
+                <img src="img/fb-footer.png" alt="">
+                <img src="img/ig.png" alt="">
+                <img src="img/link.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <section class="whatsapp-container">
+        <a href="https://wa.me/51942875386?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
+        <img class="icono-whatsapp" src="img/whatsApps.png" alt=""></a>
+    </section>     
+</body>
